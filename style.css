@@ -1,0 +1,505 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+/* Starting page 1 */
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.first-col-1 {
+    margin-top: 15%;
+    line-height: 1.35;
+    flex-basis: 50%;
+}
+.first-col-2 img{
+    border-radius: 10px;
+    height: 500px;
+    width: 335px;
+    margin-top: 20%;
+}
+span {
+    color: #ec2525;
+    font-size: 30px;
+    font-weight: 549;
+}
+h1 {
+    color: black;
+    font-size: 60px;
+    font-weight: 600;
+    margin-block-start: 0.85rem;
+    margin-block-end: 0.85rem;
+}
+p {
+    margin-top: 50px;
+    display: block;
+    margin-block-start: 1.2rem;
+    margin-block-end: 1.2rem;
+    font-size: 17px;
+}
+.button {
+    margin-top: 50px;
+    background: white;
+    border: 1px solid white;
+    height: 60px;
+}
+.btn-danger {
+    color: white;
+    background-color: #ec2525;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    padding: 14px 28px;
+    border: 1px solid white;
+    border-radius: 2px;
+    margin-bottom: 20%;
+}
+.container {
+    padding: 0 170px;
+    position: relative;
+} 
+/* The popup form - hidden by default */
+.pop-up {
+    background: white;
+    border: 1px solid rgb(164, 162, 162);
+    display: none;
+    bottom: 0;
+    right: 15px;
+    z-index: 9;
+}
+  
+/* Add styles to the form container */
+.form-container {
+    width: 440px;
+    height: 450px;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 25px;
+    background-color: white;
+}
+  
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+} 
+  /* Set a style for the submit/login button */
+.form-container .btn {
+    background-color: red;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+/* Add a red background color to the cancel button
+.form-container .cancel {
+    background-color: red;
+} */
+  
+/* Add some hover effects to buttons */
+.form-container .btn:hover {
+    opacity: 1;
+}
+#email {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 90%;
+}
+#name {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+.form-check-input {
+    border: 1px solid rgb(241, 33, 33);
+}
+
+/* Starting second page 2 */
+.about-col-1 {
+    flex-basis: 45%;
+}
+.about-col-1 h1 {
+    margin-top: 30px;
+    font-size: 45px;
+    font-weight: 750;
+    line-height: 1.5;
+}
+.about-col-2 p {
+    margin-top: 15%;
+    line-height: 1.5;
+}
+.about-col-2 {
+    flex-basis: 50%;
+}
+/* sliding part 1*/
+.work {
+    margin-top: 5%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
+    padding-left: 150px;
+}
+.slider-f {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    grid-auto-flow: column;
+    scrollbar-width: none;
+    width: 110%;
+    /* grid-auto-columns: calc(100% / 4);  */
+}
+.slider {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    grid-auto-flow: column;
+    scrollbar-width: none;
+    width: 110%;
+}
+.card {
+    background: white;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card_1 {
+    margin-left: 15px;
+    position: relative;
+    background: white;
+}
+/* sliding bottom to top part */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+.imageslide {
+    height: 400px;
+}
+.card_1:hover .overlay {
+    height: 400px;
+    background-color: rgb(227, 36, 36);
+    color: white;
+    font-size: 18px;
+    padding-left: 15px;
+    line-height: 1.5;
+    text-align: center;
+  }
+.btn {
+    color: rgb(231, 85, 85);
+    background-color: white;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    padding: 15px 28px;
+    border: 1px solid white;
+    border-radius: 2px;
+    margin-bottom: 20%;
+}
+
+.ct-5 {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20%;
+}
+.textslides {
+    height: 15px;
+    width: 15px;
+    background-color: rgb(231, 46, 46);
+    color: white;
+    border-radius: 50%;
+}
+.textslides:hover {
+    background-color: rgb(231, 46, 46);
+    color: white;
+}
+.textslides:active {
+    background-color: rgb(231, 46, 46);
+    color: white;
+}
+.textslides_1 {
+    height: 15px;
+    width: 15px;
+    background-color: rgb(239, 235, 235);
+    border-radius: 50%;
+}
+.textslides_1:hover {
+    background-color: rgb(231, 46, 46);
+    color: white;
+}
+
+/* Staring page 3 */
+#home {
+    text-align: center;
+}
+.container-hm {
+    background: white;
+    color: black;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+}
+.hm-1 {
+    margin-top: 10%;
+    align-items: center;
+    justify-content: center;
+}
+.hm-1 span {
+    color: #ec2525;
+    font-size: 24px;
+    font-weight: 550;
+}
+.hm-1 h1 {
+    font-size: 45px;
+    margin-top: 4%;
+    font-weight: 720;
+} 
+.hm-2 {
+    display: flex;
+    padding: 50px 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+    width: 73%;
+    margin-bottom: 1%;
+    line-height: 1.4;
+}
+.hm-2 h4 {
+    margin-top: 10%;
+    margin-bottom: 2%;
+    font-size: 18px;
+    font-weight: 800;
+}
+/* starting fourth page */
+#category {
+    text-align: center;
+}
+.container-ct {
+    background: white;
+    color: black;
+    padding: 100px 0;
+    margin-top: 1%;
+    align-items: center;
+    justify-content: center;
+}
+.ct-1 span {
+    color: #ec2525;
+    font-size: 24px;
+    font-weight: 550;
+}
+.ct-1 h1 {
+    font-size: 45px;
+    margin-top: 30px;
+    font-weight: 720;
+    margin-bottom: 6%;
+}
+.ct-4 {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 80px;
+}
+.ct-2 {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.imageSlides img {
+    width: 755px;
+    height: 550px;
+    border-radius: 9px;
+    padding-left: 70px;
+}
+.imageSlides {
+    display: none;
+}
+.imageSlides.active {
+    display: block;
+}
+.ct-3 {
+    margin-top: 8px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+}
+.textslidess {
+    height: 170px;
+    width: 240px;
+    padding: 4% 4% 2% 3%;
+    line-height: 1.3;
+    text-align: left;
+}
+.textslides_2 {
+    background-color: rgb(231, 46, 46);
+    color: white;
+}
+.textslides_2:hover, .textslides_2:active {
+    background-color: rgb(231, 46, 46);
+    color: white;
+}
+.textslides_3, .textslides_4 {
+    background-color: rgb(239, 235, 235);
+    color: black;
+}
+.textslides_3:hover, .textslides_4:hover, .textslides_3:active, .textslides_4:active {
+    background-color: rgb(231, 46, 46);
+    color: white;
+}
+
+/* Starting Fifth page */
+#growth {
+    text-align: center;
+}
+.container-gr {
+    background: rgb(239, 237, 237);
+    color: black;
+    padding: 100px 0;
+    align-items: center;
+    height: 420px;
+}
+.gr-1 {
+    margin-top: 1%;
+    align-items: flex-start;
+}
+.gr-1 span {
+    color: #ec2525;
+    font-size: 24px;
+    font-weight: 550;
+}
+.gr-1 h1 {
+    font-size: 45px;
+    margin-top: 4%;
+    font-weight: 720;
+}
+.gr-2 {
+    display: inline-flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 77%;
+    align-items: center;
+}
+.box {
+    border: 1px solid white;
+    height: 227px;
+    width: 214px;
+    background-color: white;
+    padding: 22px 0px 20px;
+    margin-top: 30px;
+    align-items: center;
+}
+.box:hover {
+    box-shadow: 0 12px 20px 0 rgba(16, 16, 16, 0.2), 0 10px 25px 0 rgba(16, 16, 16, 0.2);
+}
+.box-content {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.box-content h1 {
+    font-weight: 90;
+}
+.box-content p {
+    color: black;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.icon img {
+    margin-top: 3%;
+    height: 40px;
+    width: 40px;
+}
+
+/* Last page */
+#feedback {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.container-fd {
+    background: white;
+    color: black;
+    padding: 100px 0;
+    width: 55%;
+}
+.fd-1 {
+    margin-top: 15%;
+}
+.fd-1 span {
+    color: #ec2525;
+    font-size: 24px;
+    font-weight: 550;
+}
+.fd-1 h1 {
+    font-size: 45px;
+    margin-top: 5%;
+    font-weight: 720;
+}
+.fd-2 h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 5%;
+    line-height: 1.3;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 6px;
+    margin: 0;
+    padding: 0;
+}
+.fd-2 {
+    margin-top: 5%;
+    text-align: center;
+    justify-content: center;
+    text-align: left;
+    margin-bottom: 10%;
+    position: relative;
+}
+.fd-2 span {
+    color: #ec2525;
+    font-size: 20px;
+    font-weight: 550;
+}
+.img-container {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+.img_last {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+/* Footer */
+.footer-panel {
+    background-color: #a20726;
+    color: white;
+    text-align: center;
+    padding-top: 130px;
+    padding-right: 0px;
+    padding-bottom: 130px;
+    padding-left: 0px;
+}
